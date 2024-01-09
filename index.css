@@ -1,8 +1,4 @@
-body {
-    margin: 0;
-    padding: 0;
-}
-
+body,
 h1,
 h3,
 p {
@@ -30,7 +26,7 @@ header img {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 10px 100px 0 100px;
+    padding: 10px 8% 0 8%;
 }
 
 .bloom_nav h1 {
@@ -46,15 +42,17 @@ header img {
     display: flex;
     flex-direction: column;
     gap: 50px;
-    margin: 150px 0 0 100px;
+    margin: 120px 0 0 8%;
 }
 
-.bloom_nav--section{
+.bloom_nav--section,
+.bloom_nav--content {
     display: flex;
     gap: 30px;
+    align-items: center;
 }
 
-.bloom_nav--section :first-child {
+.bloom_nav--content :first-child {
     color: #F34F1D;
     border-bottom: 2px solid #F34F1D;
     padding-bottom: 5px;
@@ -83,7 +81,7 @@ header img {
     line-height: 26px;
 }
 
-button {
+.bloom_info button {
     width: 200px;
     height: 40px;
     padding: 5px;
@@ -99,8 +97,92 @@ button {
 }
 
 .bloom_progress h1 {
-    font-family: Montserrat;
-    font-size: 40px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 35px;
     font-weight: 700;
     line-height: 69px;
+}
+
+.menu-icon {
+    width: 30px;
+    height: 25px;
+    margin-top: 5px;
+    display: none;
+    cursor: pointer;
+    transition: 0.5s ease-in-out;
+}
+
+.bar {
+    background-color: #333;
+    height: 4px;
+    margin: 6px 0;
+    transition: 0.4s;
+}
+
+.bar1 {
+    width: 20px;
+}
+
+.bar2 {
+    width: 15px;
+}
+
+.menu-icon.open .bar:nth-child(1) {
+    width: 20px;
+    transform: rotate(-45deg) translate(-3px, 3px);
+}
+
+.menu-icon.open .bar:nth-child(2) {
+    width: 20px;
+    transform: rotate(45deg) translate(-4px, -4px);
+}
+
+@media screen and (max-width: 900px) {
+
+    .bloom_nav--content {
+        display: none;
+        position: absolute;
+        right: 5px;
+        top: 50px;
+        text-align: left;
+        background: #ededed;
+        box-shadow: 0px -2px 4px 0px #C8C8C83D;
+        width: 100px;
+        padding: 20px;
+    }
+
+    .bloom_nav--content :first-child {
+        color: #333;
+        border-bottom: none;
+        padding-bottom: 0;
+    }
+
+    .bloom_nav--content li {
+        padding: 5px;
+    }
+
+    .menu-icon{
+        display: block;
+    }
+
+    .show_nav{
+        display: block;
+    }
+}
+
+@media screen and (max-width: 700px) {
+    
+    .bloom_intro {
+        width: 80%;
+    }
+}
+
+@media screen and (max-width: 500px) {
+
+    .bloom_progress  {
+        display: flex;
+        flex-direction: column;
+        text-align: left;
+        gap: 10px;
+    }
 }
