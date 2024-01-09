@@ -42,22 +42,23 @@ header img {
     color: #FFF;
 }
 
-.bloom_info {
-    display: flex;
-    flex-direction: column;
-    gap: 50px;
-    margin: 150px 0 0 100px;
-}
-
 .bloom_nav--section{
     display: flex;
     gap: 30px;
+    padding: 15px 0;
 }
 
 .bloom_nav--section :first-child {
     color: #F34F1D;
     border-bottom: 2px solid #F34F1D;
     padding-bottom: 5px;
+}
+
+.bloom_info {
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    margin: 150px 0 0 100px;
 }
 
 .bloom_intro {
@@ -78,12 +79,12 @@ header img {
 }
 
 .bloom_intro p {
-    font-size: 18px;
+    font-size: 15px;
     font-weight: 400;
     line-height: 26px;
 }
 
-button {
+.bloom_info button {
     width: 200px;
     height: 40px;
     padding: 5px;
