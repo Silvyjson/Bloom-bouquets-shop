@@ -38,7 +38,6 @@ header {
     color: #FFF;
 }
 
-<<<<<<< HEAD
 .bloom_info {
     display: flex;
     flex-direction: column;
@@ -55,12 +54,6 @@ header {
     font-size: 20px;
     font-weight: 500;
     line-height: 23px;
-=======
-.bloom_nav--section{
-    display: flex;
-    gap: 30px;
-    padding: 15px 0;
->>>>>>> 3f229d645cfc4cc65f75b95a8cd336e99f040f15
 }
 
 .bloom_nav--section img{
