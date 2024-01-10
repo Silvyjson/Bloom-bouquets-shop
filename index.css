@@ -85,6 +85,7 @@ header {
 }
 
 .bloom_intro p {
+    font-family: 'Raleway', sans-serif;
     font-size: 18px;
     font-weight: 400;
     line-height: 26px;
@@ -219,11 +220,13 @@ header {
 }
 
 .bloom-shop-heading p {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 400;
     color: #F34F1D;
     word-spacing: 5px;
 }
 
-.bloom-shop-section img {
+.bloom-shop-section-img {
     width: 150px;
     height: 150px;
     display: block;
@@ -251,7 +254,13 @@ header {
     width: 100%;
 }
 
-.bloom-shop-collection article p {
+.bloom-shop-collection span  img{
+    width: 20px;
+    height: 20px;
+}
+
+.bloom-shop-collection article p, b {
+    font-family: 'Raleway', sans-serif;
     margin-bottom: 5px;
 }
 
@@ -266,6 +275,10 @@ header {
 
     .bloom-shop-collection :nth-child(3) {
         display: none;
+    }
+
+    .bloom-shop-collection div {
+        width: 80%;
     }
 }
 
