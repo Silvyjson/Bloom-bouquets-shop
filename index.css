@@ -42,7 +42,7 @@ header img {
     display: flex;
     flex-direction: column;
     gap: 50px;
-    margin: 120px 0 0 8%;
+    margin: 120px 8% 0 8%;
 }
 
 .bloom_nav--section,
@@ -87,7 +87,7 @@ header img {
     padding: 5px;
     border-radius: 12px;
     background-color: #141414;
-    color: #fff;
+    color: #FFF;
 }
 
 .bloom_progress {
@@ -161,17 +161,17 @@ header img {
         padding: 5px;
     }
 
-    .menu-icon{
+    .menu-icon {
         display: block;
     }
 
-    .show_nav{
+    .show_nav {
         display: block;
     }
 }
 
 @media screen and (max-width: 700px) {
-    
+
     .bloom_intro {
         width: 80%;
     }
@@ -179,10 +179,70 @@ header img {
 
 @media screen and (max-width: 500px) {
 
-    .bloom_progress  {
+    .bloom_progress {
         display: flex;
         flex-direction: column;
         text-align: left;
         gap: 10px;
     }
+}
+
+
+/* the shop section */
+
+.bloom-shop-section {
+    display: flex;
+    flex-direction: column;
+    margin-top: 5%;
+    padding: 0 8%;
+}
+
+.bloom-shop-heading {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.bloom-shop-heading h1 {
+    font-family: 'Playfair Display', serif;
+    font-size: 25px;
+    font-weight: 500;
+    line-height: 20px;
+}
+
+.bloom-shop-heading p {
+    color: #F34F1D;
+    word-spacing: 5px;
+}
+
+.bloom-shop-section img {
+    width: 150px;
+    height: 150px;
+    display: block;
+    margin: 0 auto;
+    padding: 10px 0;
+}
+
+.bloom-shop-collection {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.bloom-shop-collection div {
+    background-color: #ededed;
+    width: 50%;
+}
+
+.bloom-shop-collection span {
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-end;
+    border-top: 1px solid #FFF;
+    padding: 10px 0;
+    width: 100%;
+}
+
+.bloom-shop-collection article p {
+    margin-bottom: 5px;
 }
