@@ -246,3 +246,45 @@ header img {
 .bloom-shop-collection article p {
     margin-bottom: 5px;
 }
+
+@media screen and (max-width: 800px) {
+
+    .bloom-shop-collection :nth-child(4) {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 600px) {
+
+    .bloom-shop-collection :nth-child(3) {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 510px) {
+
+    .bloom-shop-heading h1 {
+        font-size: 15px;
+        font-weight: 200;
+        line-height: 10px;
+    }
+
+    .bloom-shop-heading p {
+        word-spacing: 2px;
+        font-size: 12px;
+    }
+}
+
+@media screen and (max-width: 400px) {
+
+    .bloom-shop-heading,
+    .bloom-shop-collection {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .bloom-shop-collection div {
+        width: 100%;
+    }
+}
