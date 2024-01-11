@@ -372,9 +372,13 @@ b {
     font-size: 2.5rem; 
 } 
 
+.bloom-shop-img picture:nth-child(1) h3{
+    left: 5%;
+}
+
 .bloom-shop-img picture:nth-child(2) h3,
 .bloom-shop-img picture:nth-child(3) h3 {
-    right: 10%;
+    right: 5%;
 } 
 
 @media screen and (max-width: 450px) {
