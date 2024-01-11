@@ -332,6 +332,7 @@ b {
     background-color: var(--primary-color);
     flex: 1;
     padding: 20px;
+    border-radius: 20px;
 }
 
 .about-us-article article h3{
