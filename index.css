@@ -1,3 +1,11 @@
+html {
+    font-size: 50%;
+}
+
+body{
+    background-color: #FAFAFA;
+}
+
 body,
 h1,
 h3,
@@ -36,9 +44,9 @@ header {
 
 .bloom_nav h1 {
     font-family: 'Lobster Two', sans-serif;
-    font-size: 40px;
+    font-size: 5rem;
     font-weight: 400;
-    line-height: 63px;
+    line-height: 7.875rem;
     text-align: left;
     color: #FFF;
 }
@@ -46,24 +54,25 @@ header {
 .bloom_info {
     display: flex;
     flex-direction: column;
-    gap: 50px;
-    margin: 120px 8% 0 8%;
+    gap: 5rem;
+    margin: 8% 8% 0 8%;
 }
 
 .bloom_nav--section,
 .bloom_nav--content {
     display: flex;
-    gap: 30px;
+    gap: 4rem;
     align-items: center;
     font-family: 'Raleway', sans-serif;
-    font-size: 20px;
+    color: #606060;
+    font-size: 2.5rem;
     font-weight: 500;
-    line-height: 23px;
+    line-height: 2.875rem;
 }
 
 .bloom_nav--section img{
-    width: 20px;
-    height: 20px;
+    width: 3rem;
+    height: 3rem;
 }
 
 .bloom_nav--content :first-child {
@@ -79,9 +88,9 @@ header {
 
 .bloom_intro h3 {
     font-family: 'Playfair Display', serif;
-    font-size: 50px;
+    font-size: 5rem;
     font-weight: 600;
-    line-height: 60px;
+    line-height: 7.5rem;
     color: #252525;
 }
 
@@ -91,13 +100,13 @@ header {
 
 .bloom_intro p {
     font-family: 'Raleway', sans-serif;
-    font-size: 18px;
+    font-size: 1.875rem;
     font-weight: 400;
-    line-height: 26px;
+    line-height: 2.625rem;
 }
 
 .bloom_info button {
-    width: 200px;
+    width: 150px;
     height: 40px;
     padding: 5px;
     border-radius: 12px;
@@ -109,13 +118,21 @@ header {
     display: flex;
     gap: 30px;
     text-align: center;
+    color: #252525;
 }
 
 .bloom_progress h1 {
     font-family: 'Montserrat', sans-serif;
-    font-size: 35px;
+    font-size: 3.4375rem;
     font-weight: 700;
-    line-height: 69px;
+    line-height: 6.78125rem;
+}
+
+.bloom_progress p {
+    font-family: 'Raleway', sans-serif;
+    font-size: 1.875rem;
+    font-weight: 400;
+    line-height: 3.625rem;
 }
 
 .menu-icon {
@@ -129,29 +146,33 @@ header {
 .bar {
     background-color: #333;
     height: 4px;
-    margin: 6px 0;
+    margin: 1.2rem 0;
     transition: 0.4s;
 }
 
 .bar1 {
-    width: 20px;
+    width: 3rem;
 }
 
 .bar2 {
-    width: 15px;
+    width: 2rem;
 }
 
 .menu-icon.open .bar:nth-child(1) {
-    width: 20px;
+    width: 3rem;
     transform: rotate(-45deg) translate(-3px, 3px);
 }
 
 .menu-icon.open .bar:nth-child(2) {
-    width: 20px;
+    width: 3rem;
     transform: rotate(45deg) translate(-4px, -4px);
 }
 
 @media screen and (max-width: 900px) {
+
+    html {
+        font-size: 30%;
+    }
 
     .bloom_nav--content {
         display: none;
@@ -166,7 +187,7 @@ header {
     }
 
     .bloom_nav--content :first-child {
-        color: #333;
+        color: #606060;
         border-bottom: none;
         padding-bottom: 0;
     }
@@ -182,22 +203,9 @@ header {
     .show_nav {
         display: block;
     }
-}
-
-@media screen and (max-width: 700px) {
 
     .bloom_intro {
-        width: 80%;
-    }
-}
-
-@media screen and (max-width: 500px) {
-
-    .bloom_progress {
-        display: flex;
-        flex-direction: column;
-        text-align: left;
-        gap: 10px;
+        width: 60%;
     }
 }
 
@@ -219,21 +227,22 @@ header {
 
 .bloom-shop-heading h1 {
     font-family: 'Playfair Display', serif;
-    font-size: 25px;
+    font-size: 4rem;
     font-weight: 500;
-    line-height: 20px;
+    line-height: 1.5rem;
 }
 
 .bloom-shop-heading p {
     font-family: 'Raleway', sans-serif;
+    font-size: 2.2rem;
     font-weight: 400;
     color: #F34F1D;
-    word-spacing: 5px;
+    word-spacing: 1rem;
 }
 
 .bloom-shop-section-img {
-    width: 150px;
-    height: 150px;
+    width: 15rem;
+    height: 15rem;
     display: block;
     margin: 0 auto;
     padding: 10px 0;
@@ -255,7 +264,10 @@ header {
     justify-content: space-around;
     align-items: flex-end;
     border-top: 2px solid #F0F0F0;
+<<<<<<< HEAD
     ;
+=======
+>>>>>>> 09edf06e1fbc86be7cccd6928ccff2cf601a2865
     padding: 10px 0;
     width: 100%;
 }
@@ -268,51 +280,26 @@ header {
 .bloom-shop-collection article p, b {
     font-family: 'Raleway', sans-serif;
     margin-bottom: 5px;
+    font-size: 2.5rem;
 }
 
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 600px) {
 
     .bloom-shop-collection :nth-child(4) {
         display: none;
     }
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 400px) {
 
     .bloom-shop-collection :nth-child(3) {
         display: none;
     }
 
-    .bloom-shop-collection div {
-        width: 80%;
-    }
-}
-
-@media screen and (max-width: 510px) {
-
-    .bloom-shop-heading h1 {
-        font-size: 15px;
-        font-weight: 200;
-        line-height: 10px;
-    }
-
-    .bloom-shop-heading p {
-        word-spacing: 2px;
-        font-size: 12px;
-    }
-}
-
-@media screen and (max-width: 400px) {
-
-    .bloom-shop-heading,
-    .bloom-shop-collection {
+    .bloom-shop-heading{
         display: flex;
         flex-direction: column;
         gap: 10px;
-    }
-
-    .bloom-shop-collection div {
-        width: 100%;
     }
 }
 
