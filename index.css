@@ -1,8 +1,8 @@
-body {
-    margin: 0;
-    padding: 0;
+html {
+    font-size: 50%;
 }
 
+body,
 h1,
 h3,
 p {
@@ -19,7 +19,7 @@ header {
     padding-bottom: 20px;
 }
 
-header img {
+.header-img {
     position: absolute;
     width: 100%;
     height: 100%;
@@ -30,35 +30,46 @@ header img {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 10px 100px 0 100px;
+    padding: 10px 8% 0 8%;
 }
 
 .bloom_nav h1 {
     font-family: 'Lobster Two', sans-serif;
-    font-size: 40px;
+    font-size: 5rem;
     font-weight: 400;
-    line-height: 63px;
+    line-height: 7.875rem;
     text-align: left;
     color: #FFF;
-}
-
-.bloom_nav--section{
-    display: flex;
-    gap: 30px;
-    padding: 15px 0;
-}
-
-.bloom_nav--section :first-child {
-    color: #F34F1D;
-    border-bottom: 2px solid #F34F1D;
-    padding-bottom: 5px;
 }
 
 .bloom_info {
     display: flex;
     flex-direction: column;
-    gap: 50px;
-    margin: 150px 0 0 100px;
+    gap: 5rem;
+    margin: 8% 8% 0 8%;
+}
+
+.bloom_nav--section,
+.bloom_nav--content {
+    display: flex;
+    gap: 4rem;
+    align-items: center;
+    font-family: 'Raleway', sans-serif;
+    color: #606060;
+    font-size: 2.5rem;
+    font-weight: 500;
+    line-height: 2.875rem;
+}
+
+.bloom_nav--section img{
+    width: 3rem;
+    height: 3rem;
+}
+
+.bloom_nav--content :first-child {
+    color: #F34F1D;
+    border-bottom: 2px solid #F34F1D;
+    padding-bottom: 5px;
 }
 
 .bloom_intro {
@@ -68,9 +79,9 @@ header img {
 
 .bloom_intro h3 {
     font-family: 'Playfair Display', serif;
-    font-size: 50px;
+    font-size: 5rem;
     font-weight: 600;
-    line-height: 60px;
+    line-height: 7.5rem;
     color: #252525;
 }
 
@@ -79,29 +90,112 @@ header img {
 }
 
 .bloom_intro p {
-    font-size: 15px;
+    font-family: 'Raleway', sans-serif;
+    font-size: 1.875rem;
     font-weight: 400;
-    line-height: 26px;
+    line-height: 2.625rem;
 }
 
 .bloom_info button {
-    width: 200px;
+    width: 150px;
     height: 40px;
     padding: 5px;
     border-radius: 12px;
     background-color: #141414;
-    color: #fff;
+    color: #FFF;
 }
 
 .bloom_progress {
     display: flex;
     gap: 30px;
     text-align: center;
+    color: #252525;
 }
 
 .bloom_progress h1 {
-    font-family: Montserrat;
-    font-size: 40px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 3.4375rem;
     font-weight: 700;
-    line-height: 69px;
+    line-height: 6.78125rem;
+}
+
+.bloom_progress p {
+    font-family: 'Raleway', sans-serif;
+    font-size: 1.875rem;
+    font-weight: 400;
+    line-height: 3.625rem;
+}
+
+.menu-icon {
+    width: 30px;
+    height: 25px;
+    display: none;
+    cursor: pointer;
+    transition: 0.5s ease-in-out;
+}
+
+.bar {
+    background-color: #333;
+    height: 4px;
+    margin: 6px 0;
+    transition: 0.4s;
+}
+
+.bar1 {
+    width: 3rem;
+}
+
+.bar2 {
+    width: 2rem;
+}
+
+.menu-icon.open .bar:nth-child(1) {
+    width: 3rem;
+    transform: rotate(-45deg) translate(-3px, 3px);
+}
+
+.menu-icon.open .bar:nth-child(2) {
+    width: 3rem;
+    transform: rotate(45deg) translate(-4px, -4px);
+}
+
+@media screen and (max-width: 900px) {
+
+    html {
+        font-size: 30%;
+    }
+
+    .bloom_nav--content {
+        display: none;
+        position: absolute;
+        right: 5px;
+        top: 50px;
+        text-align: left;
+        background: #ededed;
+        box-shadow: 0px -2px 4px 0px #C8C8C83D;
+        width: 100px;
+        padding: 20px;
+    }
+
+    .bloom_nav--content :first-child {
+        color: #606060;
+        border-bottom: none;
+        padding-bottom: 0;
+    }
+
+    .bloom_nav--content li {
+        padding: 5px;
+    }
+
+    .menu-icon {
+        display: block;
+    }
+
+    .show_nav {
+        display: block;
+    }
+
+    .bloom_intro {
+        width: 60%;
+    }
 }
