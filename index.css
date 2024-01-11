@@ -221,7 +221,7 @@ header {
 .bloom-shop-section {
     display: flex;
     flex-direction: column;
-    margin-top: 5%;
+    margin-top: 10%;
     padding: 0 8%;
 }
 
@@ -325,7 +325,7 @@ b {
     display: flex;
     flex-wrap: wrap;
     gap: 4rem;
-    margin-bottom: 8%;
+    margin-bottom: 10%;
 }
 
 .about-us-article article {
