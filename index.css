@@ -324,8 +324,9 @@ header {
 
 .about-us-content h1{
     font-family: 'Playfair Display', serif;
-    font-size: 56px;
+    font-size: 5.6rem;
     font-weight: 600;
     line-height: 75px;
     text-align: center;    
 }
+
