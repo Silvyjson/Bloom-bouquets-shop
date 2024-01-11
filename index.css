@@ -1,13 +1,17 @@
+html {
+    font-size: 50%;
+}
+
+body{
+    background-color: #FAFAFA;
+}
+
 body,
 h1,
 h3,
 p {
     margin: 0;
     padding: 0;
-}
-
-body{
-    background-color: #FAFAFA;
 }
 
 li {
@@ -35,9 +39,9 @@ header {
 
 .bloom_nav h1 {
     font-family: 'Lobster Two', sans-serif;
-    font-size: 40px;
+    font-size: 5rem;
     font-weight: 400;
-    line-height: 63px;
+    line-height: 7.875rem;
     text-align: left;
     color: #FFF;
 }
@@ -45,24 +49,25 @@ header {
 .bloom_info {
     display: flex;
     flex-direction: column;
-    gap: 50px;
+    gap: 5rem;
     margin: 8% 8% 0 8%;
 }
 
 .bloom_nav--section,
 .bloom_nav--content {
     display: flex;
-    gap: 30px;
+    gap: 4rem;
     align-items: center;
     font-family: 'Raleway', sans-serif;
-    font-size: 20px;
+    color: #606060;
+    font-size: 2.5rem;
     font-weight: 500;
-    line-height: 23px;
+    line-height: 2.875rem;
 }
 
 .bloom_nav--section img{
-    width: 20px;
-    height: 20px;
+    width: 3rem;
+    height: 3rem;
 }
 
 .bloom_nav--content :first-child {
@@ -78,9 +83,9 @@ header {
 
 .bloom_intro h3 {
     font-family: 'Playfair Display', serif;
-    font-size: 50px;
+    font-size: 5rem;
     font-weight: 600;
-    line-height: 60px;
+    line-height: 7.5rem;
     color: #252525;
 }
 
@@ -90,13 +95,13 @@ header {
 
 .bloom_intro p {
     font-family: 'Raleway', sans-serif;
-    font-size: 18px;
+    font-size: 1.875rem;
     font-weight: 400;
-    line-height: 26px;
+    line-height: 2.625rem;
 }
 
 .bloom_info button {
-    width: 200px;
+    width: 150px;
     height: 40px;
     padding: 5px;
     border-radius: 12px;
@@ -108,13 +113,21 @@ header {
     display: flex;
     gap: 30px;
     text-align: center;
+    color: #252525;
 }
 
 .bloom_progress h1 {
     font-family: 'Montserrat', sans-serif;
-    font-size: 35px;
+    font-size: 3.4375rem;
     font-weight: 700;
-    line-height: 69px;
+    line-height: 6.78125rem;
+}
+
+.bloom_progress p {
+    font-family: 'Raleway', sans-serif;
+    font-size: 1.875rem;
+    font-weight: 400;
+    line-height: 3.625rem;
 }
 
 .menu-icon {
@@ -128,29 +141,33 @@ header {
 .bar {
     background-color: #333;
     height: 4px;
-    margin: 6px 0;
+    margin: 1.2rem 0;
     transition: 0.4s;
 }
 
 .bar1 {
-    width: 20px;
+    width: 3rem;
 }
 
 .bar2 {
-    width: 15px;
+    width: 2rem;
 }
 
 .menu-icon.open .bar:nth-child(1) {
-    width: 20px;
+    width: 3rem;
     transform: rotate(-45deg) translate(-3px, 3px);
 }
 
 .menu-icon.open .bar:nth-child(2) {
-    width: 20px;
+    width: 3rem;
     transform: rotate(45deg) translate(-4px, -4px);
 }
 
 @media screen and (max-width: 900px) {
+
+    html {
+        font-size: 30%;
+    }
 
     .bloom_nav--content {
         display: none;
@@ -165,7 +182,7 @@ header {
     }
 
     .bloom_nav--content :first-child {
-        color: #333;
+        color: #606060;
         border-bottom: none;
         padding-bottom: 0;
     }
@@ -184,73 +201,6 @@ header {
 
     .bloom_intro {
         width: 60%;
-    }
-
-    .bloom_intro h3 {
-        font-size: 40px;
-        font-weight: 500;
-        line-height: 50px;
-    }
-
-    .bloom_intro p {
-        font-size: 15px;
-        font-weight: 300;
-        line-height: 20px;
-    }
-}
-
-@media screen and (max-width: 700px) {
-
-    .bloom_intro {
-        width: 80%;
-    }
-
-    .bloom_intro h3 {
-        font-size: 30px;
-        font-weight: 400;
-        line-height: 40px;
-    }
-
-    .bloom_intro p {
-        font-size: 15px;
-        font-weight: 300;
-        line-height: 20px;
-    }
-}
-
-@media screen and (max-width: 500px) {
-
-    .bloom_progress h1{
-        font-size: 25px;
-        font-weight: 400;
-        line-height: 30px;
-    }
-}
-
-@media screen and (max-width: 450px) {
-
-    .bloom_intro h3 {
-        font-size: 25px;
-        font-weight: 400;
-        line-height: 20px;
-    }
-
-    .bloom_intro p {
-        font-size: 12px;
-        font-weight: 200;
-        line-height: 15px;
-        margin-top: 10px;
-    }
-
-    .bloom_progress h1{
-        font-size: 20px;
-        font-weight: 200;
-        line-height: 20px;
-    }
-
-    .bloom_progress p{
-        font-size: 12px;
-        line-height: 10px;
     }
 }
 
