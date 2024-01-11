@@ -42,7 +42,7 @@ header {
     display: flex;
     flex-direction: column;
     gap: 50px;
-    margin: 120px 8% 0 8%;
+    margin: 8% 8% 0 8%;
 }
 
 .bloom_nav--section,
@@ -65,13 +65,6 @@ header {
     color: #F34F1D;
     border-bottom: 2px solid #F34F1D;
     padding-bottom: 5px;
-}
-
-.bloom_info {
-    display: flex;
-    flex-direction: column;
-    gap: 50px;
-    margin: 150px 0 0 100px;
 }
 
 .bloom_intro {
@@ -184,6 +177,22 @@ header {
     .show_nav {
         display: block;
     }
+
+    .bloom_intro {
+        width: 60%;
+    }
+
+    .bloom_intro h3 {
+        font-size: 40px;
+        font-weight: 500;
+        line-height: 50px;
+    }
+
+    .bloom_intro p {
+        font-size: 15px;
+        font-weight: 300;
+        line-height: 20px;
+    }
 }
 
 @media screen and (max-width: 700px) {
@@ -191,14 +200,52 @@ header {
     .bloom_intro {
         width: 80%;
     }
+
+    .bloom_intro h3 {
+        font-size: 30px;
+        font-weight: 400;
+        line-height: 40px;
+    }
+
+    .bloom_intro p {
+        font-size: 15px;
+        font-weight: 300;
+        line-height: 20px;
+    }
 }
 
 @media screen and (max-width: 500px) {
 
-    .bloom_progress {
-        display: flex;
-        flex-direction: column;
-        text-align: left;
-        gap: 10px;
+    .bloom_progress h1{
+        font-size: 25px;
+        font-weight: 400;
+        line-height: 30px;
+    }
+}
+
+@media screen and (max-width: 450px) {
+
+    .bloom_intro h3 {
+        font-size: 25px;
+        font-weight: 400;
+        line-height: 20px;
+    }
+
+    .bloom_intro p {
+        font-size: 12px;
+        font-weight: 200;
+        line-height: 15px;
+        margin-top: 10px;
+    }
+
+    .bloom_progress h1{
+        font-size: 20px;
+        font-weight: 200;
+        line-height: 20px;
+    }
+
+    .bloom_progress p{
+        font-size: 12px;
+        line-height: 10px;
     }
 }
