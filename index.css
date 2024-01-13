@@ -330,6 +330,8 @@ b {
     right: 5%;
 }
 
+/* media queries */
+
 @media screen and (max-width: 900px) {
 
     html {
@@ -370,8 +372,6 @@ b {
         width: 60%;
     }
 }
-
-/* media queries */
 
 @media screen and (max-width: 800px) {
 
