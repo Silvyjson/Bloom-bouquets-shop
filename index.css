@@ -174,48 +174,6 @@ header {
     transform: rotate(45deg) translate(-4px, -4px);
 }
 
-@media screen and (max-width: 900px) {
-
-    html {
-        font-size: 30%;
-    }
-
-    .bloom_nav--content {
-        display: none;
-        position: absolute;
-        right: 5px;
-        top: 50px;
-        text-align: left;
-        background: #ededed;
-        box-shadow: 0px -2px 4px 0px #C8C8C83D;
-        width: 100px;
-        padding: 20px;
-    }
-
-    .bloom_nav--content :first-child {
-        color: var(--text-color);
-        border-bottom: none;
-        padding-bottom: 0;
-    }
-
-    .bloom_nav--content li {
-        padding: 5px;
-    }
-
-    .menu-icon {
-        display: block;
-    }
-
-    .show_nav {
-        display: block;
-    }
-
-    .bloom_intro {
-        width: 60%;
-    }
-}
-
-
 /* the shop section */
 
 .bloom-shop-section {
@@ -292,41 +250,6 @@ b {
     font-size: 2.5rem;
 }
 
-@media screen and (max-width: 800px) {
-
-    .bloom-shop-collection :nth-child(4) {
-        display: none;
-    }
-}
-
-@media screen and (max-width: 700px) {
-
-    .bloom-shop-collection div {
-        max-width: 250px;
-    }
-
-    .bloom-shop-collection :nth-child(3) {
-        display: none;
-    }
-
-    .bloom-shop-heading {
-        display: flex;
-        flex-direction: column;
-        gap: 20px;
-    }
-}
-
-@media screen and (max-width: 480px) {
-
-    .bloom-shop-collection {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-    }
-}
-
-
 /* the why choose us section */
 
 .about-us-section {
@@ -351,6 +274,7 @@ b {
 
 .about-us-article article {
     background-color: var(--primary-color);
+    color: #252525;
     flex: 1;
     padding: 20px;
     border-radius: 20px;
@@ -388,9 +312,13 @@ b {
 }
 
 .bloom-shop-img h3 {
+    font-family: var(--secondary-font-family);
+    font-size: 3.5rem;
+    font-weight: 600;
+    line-height: 5rem;
     position: absolute;
     margin-top: 10px;
-    font-size: 2.5rem;
+    color: #252525;
 }
 
 .bloom-shop-img picture:nth-child(1) h3 {
@@ -402,9 +330,86 @@ b {
     right: 5%;
 }
 
+@media screen and (max-width: 900px) {
+
+    html {
+        font-size: 30%;
+    }
+
+    .bloom_nav--content {
+        display: none;
+        position: absolute;
+        right: 5px;
+        top: 50px;
+        text-align: left;
+        background: #ededed;
+        box-shadow: 0px -2px 4px 0px #C8C8C83D;
+        width: 100px;
+        padding: 20px;
+    }
+
+    .bloom_nav--content :first-child {
+        color: var(--text-color);
+        border-bottom: none;
+        padding-bottom: 0;
+    }
+
+    .bloom_nav--content li {
+        padding: 5px;
+    }
+
+    .menu-icon {
+        display: block;
+    }
+
+    .show_nav {
+        display: block;
+    }
+
+    .bloom_intro {
+        width: 60%;
+    }
+}
+
+/* media queries */
+
+@media screen and (max-width: 800px) {
+
+    .bloom-shop-collection :nth-child(4) {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 700px) {
+
+    .bloom-shop-collection div {
+        max-width: 250px;
+    }
+
+    .bloom-shop-collection :nth-child(3) {
+        display: none;
+    }
+
+    .bloom-shop-heading {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+}
+
 @media screen and (max-width: 650px) {
     .about-us-article {
         display: flex;
         flex-direction: column;
+    }
+}
+
+@media screen and (max-width: 480px) {
+
+    .bloom-shop-collection {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
     }
 }
