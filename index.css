@@ -1,4 +1,4 @@
-:root{
+:root {
     --bg-color: #FAFAFA;
     --primary-color: #FFF;
     --highlight-color: #F34F1D;
@@ -219,9 +219,11 @@ header {
 /* the shop section */
 
 .bloom-shop-section {
+    max-width: 1224px;
+    margin: 0 auto;
     display: flex;
     flex-direction: column;
-    margin-top: 10%;
+    margin-top: 100px;
     padding: 0 8%;
 }
 
@@ -247,8 +249,10 @@ header {
 }
 
 .bloom-shop-section-img {
-    width: 15rem;
-    height: 15rem;
+    max-width: 200px;
+    max-height: 200px;
+    width: 100%;
+    height: 100%;
     display: block;
     margin: 0 auto;
     padding: 10px 0;
@@ -262,7 +266,9 @@ header {
 
 .bloom-shop-collection div {
     background-color: var(--primary-color);
-    width: 50%;
+    max-width: 368.025px;
+    width: 100%;
+    border-radius: 20px;
 }
 
 .bloom-shop-collection span {
@@ -286,14 +292,14 @@ b {
     font-size: 2.5rem;
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 650px) {
 
     .bloom-shop-collection :nth-child(4) {
         display: none;
     }
 }
 
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 550px) {
 
     .bloom-shop-collection :nth-child(3) {
         display: none;
@@ -305,6 +311,15 @@ b {
         gap: 10px;
     }
 }
+
+@media screen and (max-width: 480px) {
+
+    .bloom-shop-collection {
+        display: flex;
+        flex-direction: column;
+    }
+}
+
 
 /* the why choose us section */
 
@@ -335,7 +350,7 @@ b {
     border-radius: 20px;
 }
 
-.about-us-article article h3{
+.about-us-article article h3 {
     font-family: var(--secondary-font-family);
     font-size: 3rem;
     font-weight: 300;
@@ -350,17 +365,17 @@ b {
     line-height: 3.5rem;
 }
 
-.bloom-shop-img{
+.bloom-shop-img {
     position: relative;
     display: grid;
     grid-template-columns: 1fr 1fr;
 }
 
-.bloom-shop-bridalImg{
+.bloom-shop-bridalImg {
     grid-row: 1 / span 2;
 }
 
-.bloom-shop-img img{
+.bloom-shop-img img {
     width: 100%;
     height: 100%;
     z-index: -1;
@@ -369,17 +384,17 @@ b {
 .bloom-shop-img h3 {
     position: absolute;
     margin-top: 10px;
-    font-size: 2.5rem; 
-} 
+    font-size: 2.5rem;
+}
 
-.bloom-shop-img picture:nth-child(1) h3{
+.bloom-shop-img picture:nth-child(1) h3 {
     left: 5%;
 }
 
 .bloom-shop-img picture:nth-child(2) h3,
 .bloom-shop-img picture:nth-child(3) h3 {
     right: 5%;
-} 
+}
 
 @media screen and (max-width: 450px) {
     .about-us-article {
