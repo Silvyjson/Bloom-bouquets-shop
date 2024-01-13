@@ -300,3 +300,11 @@ header {
     }
 
 }
+
+@media screen and (max-width: 480px){
+
+    .bloom-shop-collection{
+        display: flex;
+        flex-direction: column;
+    }
+}
