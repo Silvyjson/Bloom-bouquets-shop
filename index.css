@@ -330,6 +330,64 @@ b {
     right: 5%;
 }
 
+/* meet the team section */
+
+.bloom-team-section {
+    margin: 10% 0;
+    padding: 0 8%;
+}
+
+.bloom-team-section h1 {
+    font-family: var(--secondary-font-family);
+    font-size: 5.6rem;
+    font-weight: 600;
+    line-height: 75px;
+    text-align: center;
+}
+
+.bloom-team-section button{
+    display: block;
+    margin: 0 auto;
+    width: 200px;
+    height: 40px;
+    padding: 5px;
+    border-radius: 12px;
+    font-family: var(--primary-font-family);
+    background-color: var(--button-bg-color);
+    color: var(--primary-color);
+}
+
+.bloom-team-content {
+    display: flex;
+    gap: 30px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-bottom: 8%;
+}
+
+.bloom-team-content img {
+    width: 80%;
+    height: 80%;
+    margin: 10px 0;
+}
+
+.bloom-team-content h3{
+    font-family: var(--secondary-font-family);
+    font-size: 4rem;
+    font-weight: 500;
+    line-height: 5rem;  
+}
+
+.bloom-team-content p {
+    font-family:var(--primary-font-family);
+    font-size: 2.5rem;
+    font-weight: 300;
+    line-height: 4rem;
+}
+
+/* media queries */
+
 @media screen and (max-width: 900px) {
 
     html {
@@ -371,8 +429,6 @@ b {
     }
 }
 
-/* media queries */
-
 @media screen and (max-width: 800px) {
 
     .bloom-shop-collection :nth-child(4) {
@@ -411,5 +467,18 @@ b {
         flex-direction: column;
         justify-content: center;
         align-items: center;
+    }
+}
+
+@media screen and (max-width: 450px) {
+    
+    .bloom-team-content {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .bloom-team-content img {
+        width: 50%;
+        height: 50%;
     }
 }
