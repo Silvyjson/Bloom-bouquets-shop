@@ -10,7 +10,7 @@
 }
 
 html {
-    font-size: 50%;
+    font-size: 40%;
 }
 
 body {
@@ -207,10 +207,10 @@ header {
 }
 
 .bloom-shop-section-img {
-    max-width: 200px;
-    max-height: 200px;
-    width: 70%;
-    height: 70%;
+    max-width: 40rem;
+    max-height: 40rem;
+    width: 50%;
+    height: 50%;
     display: block;
     margin: 0 auto;
     padding: 10px 0;
@@ -226,28 +226,30 @@ header {
     background-color: var(--primary-color);
     max-width: 350px;
     width: 100%;
+    min-height: 180px;
+    max-height: 220px;
     border-radius: 20px;
 }
 
 .bloom-shop-collection span {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-evenly;
     align-items: flex-end;
     border-top: 2px solid #F0F0F0;
-    padding: 10px 0;
+    padding-top: 10px;
     width: 100%;
 }
 
 .bloom-shop-collection span img {
-    width: 2.5rem;
-    height: 2.5rem;
+    width: 2rem;
+    height: 2rem;
 }
 
 .bloom-shop-collection article p,
 b {
     font-family: var(--primary-font-family);
-    margin-bottom: 5px;
-    font-size: 2.5rem;
+    margin-bottom: 4px;
+    font-size: 2.2rem;
 }
 
 /* the why choose us section */
@@ -268,8 +270,9 @@ b {
 .about-us-article {
     display: flex;
     flex-wrap: wrap;
-    gap: 4rem;
+    gap: 5.5rem;
     margin-bottom: 10%;
+    justify-content: center;
 }
 
 .about-us-article article {
@@ -278,6 +281,8 @@ b {
     flex: 1;
     padding: 20px;
     border-radius: 20px;
+    max-width: 350px;
+    min-height: 100px;
 }
 
 .about-us-article article h3 {
@@ -298,7 +303,7 @@ b {
 .bloom-shop-img {
     position: relative;
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: auto auto;
 }
 
 .bloom-shop-bridalImg {
@@ -313,9 +318,9 @@ b {
 
 .bloom-shop-img h3 {
     font-family: var(--secondary-font-family);
-    font-size: 3.5rem;
+    font-size: 3rem;
     font-weight: 600;
-    line-height: 5rem;
+    line-height: 3rem;
     position: absolute;
     margin-top: 10px;
     color: #252525;
@@ -436,37 +441,18 @@ b {
     }
 }
 
-@media screen and (max-width: 700px) {
-
-    .bloom-shop-collection div {
-        max-width: 250px;
-    }
+@media screen and (max-width: 550px) {
 
     .bloom-shop-collection :nth-child(3) {
         display: none;
     }
 
-    .bloom-shop-heading {
-        display: flex;
-        flex-direction: column;
-        gap: 20px;
-    }
 }
 
 @media screen and (max-width: 650px) {
     .about-us-article {
         display: flex;
         flex-direction: column;
-    }
-}
-
-@media screen and (max-width: 480px) {
-
-    .bloom-shop-collection {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
     }
 }
 
@@ -480,5 +466,26 @@ b {
     .bloom-team-content img {
         width: 50%;
         height: 50%;
+    }
+}
+
+@media screen and (max-width: 400px) {
+
+    .bloom-shop-collection div {
+        max-width: 250px;
+        min-height: 200px;
+    }
+
+    .bloom-shop-collection {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .bloom-shop-heading {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
     }
 }
