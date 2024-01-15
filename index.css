@@ -353,10 +353,12 @@ b {
 .bloom-team-section button{
     display: block;
     margin: 0 auto;
-    width: 200px;
-    height: 40px;
+    max-width: 270px;
+    width: 100%;
+    height: 50px;
     padding: 5px;
     border-radius: 12px;
+    border: var(--button-bg-color);
     font-family: var(--primary-font-family);
     background-color: var(--button-bg-color);
     color: var(--primary-color);
@@ -372,23 +374,25 @@ b {
 }
 
 .bloom-team-content img {
-    width: 80%;
-    height: 80%;
+    width: 100%;
+    height: 100%;
+    max-width: 400px;
+    max-height: 400px;
     margin: 10px 0;
 }
 
 .bloom-team-content h3{
     font-family: var(--secondary-font-family);
-    font-size: 4rem;
+    font-size: 6rem;
     font-weight: 500;
-    line-height: 5rem;  
+    line-height: 7rem;  
 }
 
 .bloom-team-content p {
     font-family:var(--primary-font-family);
-    font-size: 2.5rem;
+    font-size: 4rem;
     font-weight: 300;
-    line-height: 4rem;
+    line-height: 7rem;
 }
 
 /* media queries */
@@ -454,6 +458,16 @@ b {
         display: flex;
         flex-direction: column;
     }
+
+    .bloom-team-content h3{
+        font-size: 4rem;
+    }
+
+    .bloom-team-content p{
+        font-size: 2.5rem;
+        line-height: 4rem;
+    }
+
 }
 
 @media screen and (max-width: 450px) {
