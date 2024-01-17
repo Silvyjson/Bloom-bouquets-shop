@@ -376,8 +376,8 @@ b {
 .bloom-team-content img {
     width: 100%;
     height: 100%;
-    max-width: 400px;
-    max-height: 400px;
+    max-width: 300px;
+    max-height: 300px;
     margin: 10px 0;
 }
 
@@ -385,7 +385,6 @@ b {
     font-family: var(--secondary-font-family);
     font-size: 6rem;
     font-weight: 500;
-    line-height: 7rem;  
 }
 
 .bloom-team-content p {
@@ -572,6 +571,14 @@ b {
         display: none;
     }
 
+    .bloom-team-content h3{
+        font-size: 4rem;
+    }
+
+    .bloom-team-content p{
+        font-size: 2.5rem;
+        line-height: 4rem;
+    }
     
     .footer-links,
     .footer-section--foot {
@@ -585,16 +592,6 @@ b {
         display: flex;
         flex-direction: column;
     }
-
-    .bloom-team-content h3{
-        font-size: 4rem;
-    }
-
-    .bloom-team-content p{
-        font-size: 2.5rem;
-        line-height: 4rem;
-    }
-
 }
 
 @media screen and (max-width: 550px) {
