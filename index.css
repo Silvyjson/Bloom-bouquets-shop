@@ -395,97 +395,6 @@ b {
     line-height: 7rem;
 }
 
-/* media queries */
-
-@media screen and (max-width: 900px) {
-
-    html {
-        font-size: 30%;
-    }
-}
-
-@media screen and (max-width: 900px) {
-
-    .bloom_nav--content {
-        display: none;
-        position: absolute;
-        right: 5px;
-        top: 50px;
-        text-align: left;
-        background: #ededed;
-        box-shadow: 0px -2px 4px 0px #C8C8C83D;
-        width: 100px;
-        padding: 20px;
-    }
-
-    .bloom_nav--content :first-child {
-        color: var(--text-color);
-        border-bottom: none;
-        padding-bottom: 0;
-    }
-
-    .bloom_nav--content li {
-        padding: 5px;
-    }
-
-    .menu-icon {
-        display: block;
-    }
-
-    .show_nav {
-        display: block;
-    }
-
-    .bloom_intro {
-        width: 60%;
-    }
-}
-
-@media screen and (max-width: 800px) {
-
-    .bloom-shop-collection :nth-child(4) {
-        display: none;
-    }
-}
-
-@media screen and (max-width: 550px) {
-
-    .bloom-shop-collection :nth-child(3) {
-        display: none;
-    }
-
-}
-
-@media screen and (max-width: 650px) {
-    .about-us-article {
-        display: flex;
-        flex-direction: column;
-    }
-
-    .bloom-team-content h3{
-        font-size: 4rem;
-    }
-
-    .bloom-team-content p{
-        font-size: 2.5rem;
-        line-height: 4rem;
-    }
-
-}
-
-@media screen and (max-width: 450px) {
-
-    .bloom-team-content {
-        display: flex;
-        flex-direction: column;
-    }
-
-    .bloom-team-content img {
-        width: 50%;
-        height: 50%;
-    }
-}
-
 /* the footer section */
 
 .footer-section {
@@ -523,8 +432,10 @@ b {
 }
 
 .footer-section--intro img {
-    width: 40rem;
-    height: 40rem;
+    max-width: 400px;
+    max-height: 250px;
+    width: 100%;
+    height: 100%;
 }
 
 .footer-section--intro form {
@@ -606,16 +517,47 @@ b {
     color: #919191;
 }
 
-@media screen and (max-width: 750px){
+/* media queries */
 
-    .footer-links,
-    .footer-section--foot {
-        display: grid;
-        grid-template-columns: auto auto;
+@media screen and (max-width: 900px) {
+
+    html {
+        font-size: 30%;
     }
-}
 
-@media screen and (max-width: 750px){
+    .bloom_nav--content {
+        display: none;
+        position: absolute;
+        right: 5px;
+        top: 50px;
+        text-align: left;
+        background: #ededed;
+        box-shadow: 0px -2px 4px 0px #C8C8C83D;
+        width: 100px;
+        padding: 20px;
+    }
+
+    .bloom_nav--content :first-child {
+        color: var(--text-color);
+        border-bottom: none;
+        padding-bottom: 0;
+    }
+
+    .bloom_nav--content li {
+        padding: 5px;
+    }
+
+    .menu-icon {
+        display: block;
+    }
+
+    .show_nav {
+        display: block;
+    }
+
+    .bloom_intro {
+        width: 60%;
+    }
 
     .footer-section--intro {
         display: flex;
@@ -623,6 +565,59 @@ b {
         align-items: flex-start;
     }
 }
+
+@media screen and (max-width: 800px) {
+
+    .bloom-shop-collection :nth-child(4) {
+        display: none;
+    }
+
+    
+    .footer-links,
+    .footer-section--foot {
+        display: grid;
+        grid-template-columns: auto auto;
+    }
+}
+
+@media screen and (max-width: 650px) {
+    .about-us-article {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .bloom-team-content h3{
+        font-size: 4rem;
+    }
+
+    .bloom-team-content p{
+        font-size: 2.5rem;
+        line-height: 4rem;
+    }
+
+}
+
+@media screen and (max-width: 550px) {
+
+    .bloom-shop-collection :nth-child(3) {
+        display: none;
+    }
+
+}
+
+@media screen and (max-width: 450px) {
+    
+    .bloom-team-content {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .bloom-team-content img {
+        width: 50%;
+        height: 50%;
+    }
+}
+
 @media screen and (max-width: 400px) {
 
     .bloom-shop-collection div {
