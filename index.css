@@ -602,8 +602,8 @@ b {
 
 }
 
-@media screen and (max-width: 450px) {
-    
+@media screen and (max-width: 460px) {
+ 
     .bloom-team-content {
         display: flex;
         flex-direction: column;
