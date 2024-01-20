@@ -667,8 +667,12 @@ b {
     .bloom-shop-bridalImg {
         grid-row: 1 ;
     }
+    .footer-section--intro input {
+        height: 50px;
+    }
 
     .footer-section--intro button {
+        height: 40px;
         width: 33%;
         right: 0;
     }
