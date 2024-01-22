@@ -10,7 +10,7 @@
 }
 
 html {
-    font-size: 40%;
+    font-size: 50%;
 }
 
 body {
@@ -94,7 +94,7 @@ header {
 
 .bloom_intro h3 {
     font-family: var(--secondary-font-family);
-    font-size: 5rem;
+    font-size: 6rem;
     font-weight: 600;
     line-height: 7.5rem;
     color: #252525;
@@ -106,13 +106,13 @@ header {
 
 .bloom_intro p {
     font-family: var(--primary-font-family);
-    font-size: 1.875rem;
+    font-size: 2rem;
     font-weight: 400;
     line-height: 2.625rem;
 }
 
 .bloom_info button {
-    width: 150px;
+    width: 200px;
     height: 40px;
     padding: 5px;
     border-radius: 12px;
@@ -376,31 +376,165 @@ b {
 .bloom-team-content img {
     width: 100%;
     height: 100%;
-    max-width: 400px;
-    max-height: 400px;
+    max-width: 300px;
+    max-height: 300px;
     margin: 10px 0;
 }
 
 .bloom-team-content h3{
     font-family: var(--secondary-font-family);
-    font-size: 6rem;
+    font-size: 4rem;
     font-weight: 500;
-    line-height: 7rem;  
 }
 
 .bloom-team-content p {
     font-family:var(--primary-font-family);
-    font-size: 4rem;
+    font-size: 2.5rem;
     font-weight: 300;
     line-height: 7rem;
 }
 
+/* the footer section */
+
+.footer-section {
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    height: 100%;
+    width: 100%;
+    padding: 50px 0;
+    background-color: var(--button-bg-color);
+    color: var(--primary-color);
+}
+
+.footer-section--intro {
+    display: flex;
+    gap: 50px;
+    padding: 0 8%;
+    align-items: center;
+}
+
+.footer-section--intro div{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.footer-section--intro h1 {
+    font-family: var(--secondary-font-family);
+    font-size: 6rem;
+    font-weight: 600;
+    line-height: 6rem;
+    padding: 10px 0;
+    width: 100%;
+   max-width: 700px;
+}
+
+.footer-section--intro p {
+    font-family: var(--primary-font-family);
+    font-size: 2.5rem;
+    font-weight: 400;
+    padding-bottom: 10px;
+    width: 100%;
+    max-width: 500px;
+}
+
+.footer-section--intro img {
+    max-width: 55rem;
+    max-height: 28rem;
+    min-height: 280px;
+    width: 100%;
+    height: 100%;
+}
+
+.footer-section--intro form {
+    position: relative;
+}
+
+.footer-section--intro input {
+    width: 100%;
+    height: 60px;
+    border-radius: 10px;
+}
+
+.footer-section--intro button {
+    position: absolute;
+    top: 8px;
+    right: 5px;
+    width: 45%;
+    height: 50px;
+    border-radius: 12px;
+    font-family: var(--primary-font-family);
+    background-color: var(--button-bg-color);
+    color: var(--primary-color);
+}
+
+.footer-links {
+    display: flex;
+    gap: 5%;
+    padding: 0 8%;
+}
+
+.footer-links h3 {
+    font-family: var(--secondary-font-family);
+    font-size: 4rem;
+    font-weight: 400;
+    line-height: 5rem;
+}
+
+.footer-links li {
+    font-family: var(--primary-font-family);
+    font-size: 2.5rem;
+    font-weight: 400;
+    line-height: 4rem;
+    color: #909090;
+    padding: 5px 0;
+}
+
+.footer-links li i{
+    font-size: 4rem;
+}
+
+.footer-links:nth-child(4) {
+    display: flex;
+    flex-direction: column;
+}
+
+.footer-links :nth-child(4) span {
+    padding-left: 5px;
+}
+
+.footer-section--foot {
+    display: flex;
+    align-items: center;
+    gap: 8%;
+    border-top: 2px solid #626262;
+    padding: 20px 8% 0;
+}
+
+.footer-section--foot h1 {
+    font-family: var(--bold-font-family);
+    font-size: 5rem;
+    font-weight: 400;
+    line-height: 7.875rem;
+    text-align: left;
+    color: var(--primary-color);
+}
+
+.footer-section--foot p {
+    font-family: var(--primary-font-family);
+    font-size: 2.5rem;
+    font-weight: 400;
+    line-height: 3rem;
+    color: #919191;
+}
+
 /* media queries */
 
-@media screen and (max-width: 900px) {
+@media screen and (max-width: 1050px) {
 
     html {
-        font-size: 30%;
+        font-size: 40%;
     }
 
     .bloom_nav--content {
@@ -436,54 +570,75 @@ b {
     .bloom_intro {
         width: 60%;
     }
-}
-
-@media screen and (max-width: 800px) {
 
     .bloom-shop-collection :nth-child(4) {
         display: none;
     }
 }
 
-@media screen and (max-width: 550px) {
+@media screen and (max-width: 850px) {
+
+    html {
+        font-size: 35%;
+    }
+
+    .footer-section--intro {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .footer-section--intro img {
+        max-width: auto;
+        max-height: auto;
+        min-height: 200px;
+        width: 100%;
+        height: 100%;
+    }
+}
+
+@media screen and (max-width: 600px) {
 
     .bloom-shop-collection :nth-child(3) {
         display: none;
     }
 
-}
-
-@media screen and (max-width: 650px) {
     .about-us-article {
         display: flex;
         flex-direction: column;
-    }
-
-    .bloom-team-content h3{
-        font-size: 4rem;
-    }
-
-    .bloom-team-content p{
-        font-size: 2.5rem;
-        line-height: 4rem;
-    }
-
-}
-
-@media screen and (max-width: 450px) {
-    
-    .bloom-team-content {
-        display: flex;
-        flex-direction: column;
+        justify-content: center;
+        align-items: center;
     }
 
     .bloom-team-content img {
         width: 50%;
         height: 50%;
     }
+
+    .bloom-team-content {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .footer-links,
+    .footer-section--foot {
+        display: grid;
+        grid-template-columns: auto auto auto;
+        gap: 10px;
+        justify-content: space-evenly;
+    }
 }
 
 @media screen and (max-width: 400px) {
+    
+    html {
+        font-size: 30%;
+    }
+
+    .bloom_intro h3 {
+        font-size: 5rem;
+        line-height: 5rem;
+    }
 
     .bloom-shop-collection div {
         max-width: 250px;
@@ -501,5 +656,32 @@ b {
         display: flex;
         flex-direction: column;
         gap: 20px;
+    }
+    
+    .bloom-shop-img {
+        position: relative;
+        display: grid;
+        grid-template-columns: auto;
+    }
+    
+    .bloom-shop-bridalImg {
+        grid-row: 1 ;
+    }
+    .footer-section--intro input {
+        height: 50px;
+    }
+
+    .footer-section--intro button {
+        height: 40px;
+        width: 33%;
+        right: 0;
+    }
+
+    .footer-links,
+    .footer-section--foot {
+        display: grid;
+        grid-template-columns: auto auto;
+        gap: 10px;
+        justify-content: center;
     }
 }
